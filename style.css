@@ -1,0 +1,215 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+.s1 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.name {
+  /* position: absolute;
+  top: 4rem;
+  left: 5rem; */
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 84px;
+  letter-spacing: -0.05em;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 15, 0, 1) 0%,
+    rgba(101, 43, 176, 0.83) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: 0.5s;
+  width: fit-content;
+}
+.name:hover {
+  transform: scale(1.03);
+  overflow: hidden;
+}
+.slogan {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem;
+  transform: scale(1.05);
+}
+.noone {
+  color: white;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 8rem;
+  letter-spacing: -0.075em;
+}
+.maybe {
+  line-height: 8rem;
+  letter-spacing: -0.075em;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 120px;
+  color: #ffffff;
+}
+.line1 {
+  position: absolute;
+  top: -2%;
+  right: 0rem;
+  filter: blur(1px);
+  transform: rotate(180deg);
+
+  background-image: linear-gradient(
+    152.34deg,
+    rgba(104, 2, 185, 0.77) 5.68%,
+    rgba(190, 6, 6, 0.47) 96.69%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.bg-svg-right svg path {
+  stroke-dasharray: 500;
+  animation: dash 3s linear infinite;
+  background-size: contain;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+.button {
+  position: absolute;
+  bottom: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rec {
+  width: 265px;
+  height: 61px;
+
+  background: linear-gradient(
+    90deg,
+    #d14040 3.77%,
+    rgba(145, 56, 101, 0.843385) 45.91%,
+    rgba(82, 48, 138, 0.69) 87.17%
+  );
+  border-radius: 37px;
+  font-family: Nexa Book;
+  font-size: 28px;
+  line-height: 4.2rem;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  text-shadow: 0px 4px 13px rgba(0, 0, 0, 0.51);
+  transition: 0.3s ease-in;
+}
+
+.rec:hover {
+  width: 274px;
+  height: 63.07px;
+  box-shadow: -1px 2px 7px rgba(255, 255, 255, 0.23);
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  right: 1%;
+  position: sticky;
+  top: 0rem;
+  background: rgba(34, 34, 34, 0.269);
+  z-index: 1;
+  height: 7vh;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: white;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 36px;
+  letter-spacing: 0.04rem;
+}
+.nav_links li a:hover {
+  color: #3cffe2b6;
+}
+
+@media only screen and (max-width: 2560px) {
+  .slogan {
+    position: relative;
+    left: 20rem;
+    transform: scale(1.34);
+    padding: 20rem;
+  }
+  .button {
+    position: absolute;
+    bottom: 8rem;
+  }
+  .line1 {
+    position: absolute;
+    right: -1rem;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  .slogan {
+    position: relative;
+    left: 05rem;
+    display: flex;
+    flex-direction: column;
+    padding: 15rem;
+    transform: scale(1.05);
+  }
+  .button {
+    position: absolute;
+    bottom: 8rem;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 1640px) {
+  .line1 {
+    opacity: 0%;
+    width: 0%;
+    height: 0%;
+  }
+}
+
+@media only screen and (max-width: 2220px) {
+  .slogan {
+    position: relative;
+    left: 05rem;
+    display: flex;
+    flex-direction: column;
+    padding: 15rem;
+    transform: scale(1.05);
+  }
+  .button {
+    position: absolute;
+    bottom: 8rem;
+  }
+}

@@ -1,0 +1,374 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.s1 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.both {
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+  padding: 14rem;
+}
+.french {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 115px;
+  line-height: 10rem;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+.about {
+  width: 829px;
+
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 132%;
+
+  letter-spacing: -0.035em;
+
+  color: #ffffff;
+}
+.face {
+  position: absolute;
+  top: 17rem;
+  right: 8rem;
+  width: 400px;
+  height: 400px;
+  z-index: 0;
+}
+.face_txt {
+  position: absolute;
+  right: 13rem;
+  bottom: 24rem;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 24px;
+  width: fit-content;
+  color: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 05%;
+  position: sticky;
+  top: 0rem;
+  background: black;
+  z-index: 1;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: white;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 30px;
+  letter-spacing: -0.05em;
+}
+.nav_links li a:hover {
+  color: #3cffe2b6;
+}
+.logo {
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+  width: 162px;
+  height: 92px;
+  transform: scale(1.5);
+}
+/* @media only screen and (max-width: 2560px) {
+  .both {
+    transform: scale(1.3);
+    position: relative;
+    left: 8rem;
+    top: 8rem;
+  }
+  .face {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 24rem;
+    right: 15rem;
+  }
+  .face_txt {
+    position: relative;
+    bottom: 10rem;
+  }
+} */
+/* s2 starts here */
+.s2 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.work {
+  width: fit-content;
+  padding-left: 45%;
+  padding-top: 10rem;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  letter-spacing: -0.05em;
+  color: white;
+}
+.collection {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+.Music {
+  width: 353px;
+  height: 314px;
+  border-radius: 48px;
+  background: linear-gradient(180deg, #1877f2 0%, #e32636 0.01%, #1d1160 100%);
+  position: relative;
+  right: 25rem;
+  font-size: 25px;
+  transition: 0.5s ease;
+}
+.CODE {
+  width: 353px;
+  height: 314px;
+  border-radius: 48px;
+  background: linear-gradient(180deg, #1877f2 0%, #e32636 0.01%, #1d1160 100%);
+  font-size: 25px;
+  transition: 0.5s ease;
+}
+.edits {
+  width: 353px;
+  height: 314px;
+  border-radius: 48px;
+  background: linear-gradient(180deg, #1877f2 0%, #e32636 0.01%, #1d1160 100%);
+  position: relative;
+  left: 25rem;
+  font-size: 25px;
+  transition: 0.5s ease;
+}
+.music-txt {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 0%;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.code-txt {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 0%;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.edit-txt {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 0%;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.Music:hover {
+  transform: scale(1.02);
+}
+.CODE:hover {
+  transform: scale(1.02);
+}
+.edits:hover {
+  transform: scale(1.02);
+}
+.footer {
+  background-color: black;
+  width: 2560px;
+  height: 255px;
+}
+.explore {
+  position: relative;
+  left: 24%;
+  width: fit-content;
+  color: #ffffff;
+  font-family: Nexa Book;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+}
+.ex-list {
+  list-style: none;
+  padding-top: 1rem;
+  position: relative;
+  left: 0.5rem;
+  text-align: left;
+  line-height: 1.4rem;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+}
+.socials {
+  position: relative;
+  top: -09rem;
+  left: 45%;
+  width: fit-content;
+  color: #ffffff;
+  font-family: Nexa Book;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+}
+.so-list {
+  list-style: none;
+  padding-top: 1rem;
+  position: relative;
+  left: 0.5rem;
+  text-align: left;
+  line-height: 1.4rem;
+}
+.contact {
+  color: #ffffff;
+  position: relative;
+  top: -13.5rem;
+  left: 65%;
+  width: fit-content;
+  color: #ffffff;
+  font-family: Nexa Book;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+}
+.co-list {
+  list-style: none;
+  padding-top: 1rem;
+  position: relative;
+  left: 3.5rem;
+  text-align: left;
+  line-height: 1.4rem;
+}
+.l {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.l:hover {
+  color: #3cffe2b6;
+}
+.made {
+  background-color: black;
+}
+.made-love {
+  font-family: Metropolis;
+  font-weight: 200;
+  font-size: 20px;
+  position: relative;
+  bottom: 1rem;
+  left: 45%;
+  right: 50%;
+  color: white;
+}
+@media only screen and (max-width: 2560px) {
+  .both {
+    transform: scale(1.3);
+    width: fit-content;
+    position: relative;
+    left: 8rem;
+    top: 10rem;
+  }
+  .face {
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    top: 24rem;
+    right: 15rem;
+  }
+  .face_txt {
+    position: absolute;
+    right: 20rem;
+    bottom: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .both {
+    transform: scale(1);
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+  }
+  .about {
+    letter-spacing: 0em;
+  }
+  .face {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 21rem;
+  }
+  .face_txt {
+    position: absolute;
+    right: 19rem;
+    bottom: 21rem;
+  }
+  .work {
+    font-size: 100px;
+    position: relative;
+    top: 5%;
+    left: -2%;
+    width: fit-content;
+  }
+  .collection {
+    transform: scale(0.8);
+    position: relative;
+    top: 20%;
+  }
+  .footer {
+    background-color: black;
+    width: 1920px;
+    height: 255px;
+    transform: scale(1.15);
+    position: relative;
+    top: 1rem;
+  }
+  .socials {
+    position: relative;
+    left: 47%;
+  }
+  .contact {
+    position: relative;
+    left: 70%;
+  }
+  .explore {
+    position: relative;
+    left: 22%;
+  }
+}
